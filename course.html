@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2 Solution</title>
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .section {
+      border: 1px solid black;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      background-color: #f0f0f0;
+    }
+
+    .section-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #c0c0c0;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .section-content {
+      margin-top: 40px; /* To ensure text doesn't overlap with the section title */
+    }
+
+    /* Desktop Styles (992px and above) */
+    @media (min-width: 992px) {
+      .section {
+        float: left;
+        width: 33.33%;
+      }
+    }
+
+    /* Tablet Styles (768px to 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .section {
+        float: left;
+        width: 50%;
+      }
+      #section3 {
+        clear: both;
+        width: 100%;
+      }
+    }
+
+    /* Mobile Styles (767px and below) */
+    @media (max-width: 767px) {
+      .section {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    /* Optional: Font and Color Customization */
+    header h1 {
+      font-size: 2em; /* 75% larger than the default font size */
+    }
+
+    .section-title {
+      font-size: 1.25em; /* 25% larger than the section content font size */
+    }
+
+    .section {
+      background-color: #e6e6fa; /* Lavender */
+    }
+
+    #section1 .section-title {
+      background-color: #ffcccb; /* Light Red */
+    }
+
+    #section2 .section-title {
+      background-color: #add8e6; /* Light Blue */
+    }
+
+    #section3 .section-title {
+      background-color: #90ee90; /* Light Green */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+  </header>
+  <section class="section" id="section1">
+    <div class="section-title">Chicken</div>
+    <div class="section-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+  <section class="section" id="section2">
+    <div class="section-title">Beef</div>
+    <div class="section-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+  <section class="section" id="section3">
+    <div class="section-title">Sushi</div>
+    <div class="section-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+</body>
+</html>
